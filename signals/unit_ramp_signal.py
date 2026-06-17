@@ -15,12 +15,15 @@ def unit_ramp(n_start, n_end):
     plt.figure(figsize=(8, 4))
     plt.stem(n, r)
 
-    plt.title("Unit Ramp Signal")
+    plt.title(
+        "Unit Ramp Signal\n"
+        "Starts at the origin and increases steadily with each sample"
+    )
     plt.xlabel("n")
     plt.ylabel("r[n]")
 
-    plt.xticks(np.arange(n_start, n_end + 1, 1))
-    plt.yticks(np.arange(0, 3, 1))
+    plt.xticks(np.arange(n_start, n_end + 1, 10))
+    plt.ylim(-0.5, max(1, n_end) + 1)
 
     plt.grid(True)
     plt.tight_layout()
