@@ -1,0 +1,118 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[a4paper,top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{parskip}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{plain}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\linespread{1.06}
+
+\lstdefinestyle{pythoncode}{
+    language=Python,
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\bfseries\color{blue!60!black},
+    commentstyle=\itshape\color{green!40!black},
+    stringstyle=\color{red!50!black},
+    numbers=none,
+    showstringspaces=false,
+    breaklines=true,
+    columns=fullflexible,
+    keepspaces=true,
+    frame=single,
+    xleftmargin=1em,
+    xrightmargin=0.5em,
+    framexleftmargin=0.8em,
+    framexrightmargin=0.5em,
+    aboveskip=1em,
+    belowskip=1em,
+    lineskip=2pt,
+    rulecolor=\color{black!35},
+    backgroundcolor=\color{black!3},
+    tabsize=4
+}
+
+\begin{document}
+
+\begin{titlepage}
+\thispagestyle{empty}
+\centering
+
+\vspace*{0.05in}
+
+{\Large\bfseries {{UNIVERSITY_NAME}}\par}
+\vspace{0.16in}
+{\large {{INSTITUTE_NAME}}\par}
+\vspace{0.12in}
+{\large {{DEPARTMENT_NAME}}\par}
+
+\vspace{0.45in}
+\includegraphics[width=1.5in]{{{LOGO_PATH}}}
+
+\vspace{0.55in}
+{\Large\bfseries {{ASSIGNMENT_NUMBER}}\par}
+
+\vspace{0.3in}
+{\Large\bfseries {{ASSIGNMENT_TITLE}}\par}
+
+\vspace{0.5in}
+{\large\bfseries BY\par}
+
+\vspace{0.25in}
+{\large {{STUDENT_NAME}} [{{ROLL_NUMBER}}]\par}
+
+\vfill
+
+{\normalsize {{DATE}}\par}
+
+\end{titlepage}
+
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\section*{OBJECTIVE}
+
+The objective of this lab assignment is to implement common signal operations on a basic signal generated in Lab Exercise 1 and display the results graphically. Each operation is implemented using a separate Python function.
+
+\section*{SOFTWARE AND LIBRARIES USED}
+
+\begin{itemize}
+    \item Programming language: Python
+    \item Libraries used: NumPy and Matplotlib
+    \item Purpose of NumPy: numerical signal computation
+    \item Purpose of Matplotlib: graphical representation of signal operations
+\end{itemize}
+
+\section*{BASE SIGNAL USED}
+
+A rectangular signal from Lab Exercise 1 is used as the base signal. It has value 1 for a selected width and value 0 outside that interval. This signal is suitable for demonstrating amplitude scaling, time scaling, shifting, flipping, multiplication, convolution, and correlation. The original signal is shown together with the operation results in the combined output figure.
+
+\section*{THEORY AND IMPLEMENTATION}
+
+The following subsections describe each signal operation. The code snippets show separate Python functions used for the operations. NumPy is imported as \texttt{np} in the program.
+
+{{OPERATION_SECTIONS}}
+
+\section*{OUTPUT}
+
+{{FIGURE_SECTIONS}}
+
+\section*{RESULT AND DISCUSSION}
+
+The output successfully demonstrates the required signal operations. Amplitude scaling changes the height of the signal. Time scaling compresses the signal along the time axis. Time delay shifts the signal to the right, while time advance shifts it to the left. Time flipping reverses the signal around the vertical axis. Multiplication in the time domain combines two signals sample by sample, and multiplication in the frequency domain combines their spectra. Convolution gives the combined response of two signals, and correlation shows the similarity between two signals.
+
+\section*{CONCLUSION}
+
+The lab assignment was completed by implementing each signal operation in a separate Python function and displaying the output graphically. The results show the effects of amplitude scaling, time scaling, shifting, flipping, multiplication, convolution, and correlation on a basic discrete-time signal.
+
+\end{document}
