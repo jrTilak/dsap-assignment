@@ -1,0 +1,16 @@
+{
+  "university_name": "TRIBHUVAN UNIVERSITY",
+  "institute_name": "INSTITUTE OF ENGINEERING",
+  "campus_name": "PURWANCHAL CAMPUS",
+  "assignment_number": "DSAP ASSIGNMENT - 1",
+  "assignment_title": "IMPLEMENTATION OF BASIC SIGNALS",
+  "student_name": "Tilak Thapa",
+  "roll_number": "PUR079BCT094",
+  "department_name": "DEPARTMENT OF ELECTRONICS AND COMPUTER ENGINEERING",
+  "campus_address": "PURWANCHAL CAMPUS\nDHARAN, SUNSARI",
+  "subject_name": "Digital Signal Analysis and Processing",
+  "teacher_name": "",
+  "date": "18 JUNE",
+  "logo_path": "assets/tu-logo.jpg",
+  "output_pdf": "output/final-report.pdf"
+}

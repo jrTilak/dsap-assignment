@@ -1,0 +1,127 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[a4paper,top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{parskip}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{plain}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+\linespread{1.06}
+
+\lstdefinestyle{pythoncode}{
+    language=Python,
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\bfseries\color{blue!60!black},
+    commentstyle=\itshape\color{green!40!black},
+    stringstyle=\color{red!50!black},
+    numbers=none,
+    showstringspaces=false,
+    breaklines=true,
+    columns=fullflexible,
+    keepspaces=true,
+    frame=single,
+    xleftmargin=1em,
+    xrightmargin=0.5em,
+    framexleftmargin=0.8em,
+    framexrightmargin=0.5em,
+    aboveskip=1em,
+    belowskip=1em,
+    lineskip=2pt,
+    rulecolor=\color{black!35},
+    backgroundcolor=\color{black!3},
+    tabsize=4
+}
+
+\begin{document}
+
+\begin{titlepage}
+\thispagestyle{empty}
+\centering
+
+\vspace*{0.05in}
+
+{\Large\bfseries {{UNIVERSITY_NAME}}\par}
+\vspace{0.16in}
+{\large {{INSTITUTE_NAME}}\par}
+\vspace{0.12in}
+{\large {{CAMPUS_NAME}}\par}
+
+\vspace{0.5in}
+\includegraphics[width=1.55in]{{{LOGO_PATH}}}
+
+\vspace{0.55in}
+{\Large\bfseries {{ASSIGNMENT_NUMBER}}\par}
+
+\vspace{0.3in}
+{\Large\bfseries {{ASSIGNMENT_TITLE}}\par}
+
+\vspace{0.5in}
+{\large\bfseries BY\par}
+
+\vspace{0.25in}
+{\large {{STUDENT_NAME}} [{{ROLL_NUMBER}}]\par}
+
+\vfill
+
+{\normalsize {{DEPARTMENT_NAME}}\par}
+\vspace{0.14in}
+{\normalsize {{CAMPUS_ADDRESS}}\par}
+
+\vspace{0.3in}
+{\normalsize {{DATE}}\par}
+
+\end{titlepage}
+
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\section*{OBJECTIVE}
+
+The objective of this assignment is to write a Python program that implements the required elementary signals. Each signal is implemented using a separate function and demonstrated graphically.
+
+\section*{SOFTWARE AND LIBRARIES USED}
+
+\begin{itemize}
+    \item Subject: {{SUBJECT_NAME}}
+{{TEACHER_LINE}}
+    \item Programming language: Python
+    \item Libraries used: NumPy and Matplotlib
+    \item Purpose of NumPy: numerical signal generation
+    \item Purpose of Matplotlib: graphical representation of signals
+\end{itemize}
+
+\section*{THEORY AND IMPLEMENTATION}
+
+The following subsections describe each implemented signal. The code snippets show the separate Python functions used for signal generation. NumPy is imported as \texttt{np} in the program.
+
+{{SIGNAL_SECTIONS}}
+
+\section*{PROGRAM SUMMARY}
+
+The program defines a separate Python function for each required signal. The total number of samples used is \(n = 100\). The unit impulse, unit step, and unit ramp signals are displayed over the range \(-50\) to \(49\). The complex exponential signal uses \(a = -0.02\) and \(\omega = 0.2\). The increasing and decreasing real exponential signals use \(a = 0.05\). The rectangular signal uses width \(20\), the sawtooth signal uses period \(20\), and the PCM signal uses \(16\) quantization levels.
+
+All signals are calculated using NumPy arrays and plotted using Matplotlib. The output graph clearly shows the nature of each implemented signal.
+
+\section*{OUTPUT}
+
+{{FIGURE_SECTIONS}}
+
+\section*{RESULT AND DISCUSSION}
+
+The output successfully demonstrates all required signals. The unit impulse contains a single non-zero sample at the origin. The unit step changes from 0 to 1 at zero, while the unit ramp grows linearly after zero. The complex exponential plot shows separate real and imaginary components with decreasing amplitude. The real exponential plots show both increasing and decreasing behavior. The rectangular signal remains high for the selected width and then becomes zero. The sawtooth signal repeats after every selected period, and the PCM signal shows a quantized sinusoidal waveform using 16 discrete levels.
+
+\section*{CONCLUSION}
+
+The assignment was completed by implementing each required signal in a separate Python function and displaying the output graphically. The result shows the basic behavior of impulse, step, ramp, complex exponential, real exponential, rectangular, sawtooth, and PCM signals.
+
+\end{document}
